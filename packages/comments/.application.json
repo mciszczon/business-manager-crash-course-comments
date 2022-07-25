@@ -1,0 +1,11 @@
+{
+  "$schema": "target/schemas/.application.schema.json",
+  "moduleId": "COMMENTS",
+  "appDefinitionId": "f130edc7-9235-4104-aec4-6aaa594acd91",
+  "isCoreService": true,
+  "routeNamespace": "comments",
+  "translations": {
+    "enabled": true
+  },
+  "enabledByExperiments": ["specs.infra.yoshi-bm.ChangeMe"]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "appName": "comments.pages.index",
+    "notifications": {
+      "slack_channels": [
+        "comments-urgent"
+      ]
+    },
+    "deploy_annotations": [
+      "comments",
+      "business-manager"
+    ],
+    "petri_annotations": {
+      "scopes": [
+        "business-manager",
+        "bm-apps-f130edc7-9235-4104-aec4-6aaa594acd91"
+      ]
+    },
+    "ignore_first_request_roundtrip": true
+  }
+]
