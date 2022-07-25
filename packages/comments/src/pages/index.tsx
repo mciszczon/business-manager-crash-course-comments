@@ -1,13 +1,22 @@
 import React, { FC } from 'react';
-import { useTranslation, useAppLoaded, Trans } from '@wix/yoshi-flow-bm';
+import {
+  useTranslation,
+  useAppLoaded,
+  useRequest,
+  Trans,
+} from '@wix/yoshi-flow-bm';
 import { Page, Layout, Cell, Card, Text } from 'wix-style-react';
+
+import { fetch } from '../api/comments.api';
 
 const introUrl = 'https://github.com/wix-private/business-manager';
 
 const Index: FC = () => {
   useAppLoaded({ auto: true });
-
+  const { loading, error, data } = useRequest(fetch());
   const { t } = useTranslation();
+
+  console.info(data);
 
   return (
     <Page>
